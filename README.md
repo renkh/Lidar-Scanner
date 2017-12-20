@@ -17,6 +17,7 @@ Lidar scanner is a device capable of scanning small to medium sized rooms and sp
 
 | Device | Description |
 | --- | --- |
+| Arduino Uno R3 | Microcontroller handles operation of devices |
 | LIDAR-Lite v3 | Lidar scanner |
 | Stepping Motor | 12V 0.4A 200 steps |
 | Digital RC Servo Motor | 5V ~500 mA |
