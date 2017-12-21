@@ -1,5 +1,5 @@
 [materials]: https://i.imgur.com/d9pONmn.jpg "Materials"
-[demo]: https://giphy.com/gifs/3ohjUPLlxs0M3eeMda/html5 "Demo"
+[demo]: https://media.giphy.com/media/3ohjUPLlxs0M3eeMda/source.mp4 "Demo"
 # Lidar Scanner
 
 Lidar scanner is a device capable of scanning small to medium sized rooms and spaces using Lidar. The Lidar sensor illuminates a small target in a scene and measures the distance by calculating the laser return times and wavelengths. The device then calculates the angle of the target in relation to its position and saves an xyz coordinate to an SD card. By knowing the precise xyz coordinates, it is possible to make digital 3D representations of the scenery by using software capable of reading xyz coordinates. Main motivation of this project is to create an affordable 3D scanning Lidar sensor by using readily available parts and microcontrollers at a fraction of the price of comparable commercial 3D scanners.
