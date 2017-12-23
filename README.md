@@ -43,7 +43,7 @@ Soldering is required for some parts. Assembly is straight forward. First assemb
 The Adafruit motor shield came partially assembled, I switched out the standard header pins for [stackable headers](https://www.amazon.com/Arduino-Stackable-Header-Kit-R3/dp/B00PCCWEJG/ref=sr_1_4?ie=UTF8&qid=1514046868&sr=8-4&keywords=arduino+stackable+header+kit), stackable headers allow you to stack shields. For soldering instructions, visit [Adafruit Motor Shield V2](https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-headers#installing-with-stacking-headers) **Install Headers & Terminals** page **Installing with Stacking Headers** subsection.
 
 External power is needed to drive the servo motor. Cut trace along the bottom of the shield where it says **For opt. servo pwr supply cut trace**. You can do it with a knife, make sure the gold contact line is completely severed.
-![cut trace]:(https://cdn-learn.adafruit.com/assets/assets/000/039/115/medium800/learn_arduino_P2080096_2kb.jpg?1486768291.jpg)
+![cut trace](https://cdn-learn.adafruit.com/assets/assets/000/039/115/medium800/learn_arduino_P2080096_2kb.jpg)
 Then solder wires to the **opt servo** holes located at the top of the shield. The red wire goes to the hole closest to **Reset** button. Be sure to get this step right, you can risk damage to the servo motor. Connect the wires to a DC power jack, this power jack will be connected to a **5 Vdc** power supply, which will provide enough power to drive the servo. Do not use anything higher than 5 Vdc.
 
 ## Software Installation
