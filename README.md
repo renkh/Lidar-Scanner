@@ -53,7 +53,9 @@ Code to run this device is provided in the repository. Download and install [Ard
 
 Libraries needed:
 [Adafruit Motor Shield Library](https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-software)
+
 [Adafruit RGB LCD Shield Library](https://learn.adafruit.com/rgb-lcd-shield/using-the-rgb-lcd-shield)
+
 [Lidar Lite Library](https://github.com/garmin/LIDARLite_v3_Arduino_Library)
 
 
