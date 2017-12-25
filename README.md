@@ -44,12 +44,27 @@ The Adafruit motor shield came partially assembled, I switched out the standard 
 
 External power is needed to drive the servo motor. Cut trace along the bottom of the shield where it says **For opt. servo pwr supply cut trace**. You can do it with a knife, make sure the gold contact line is completely severed.
 ![cut trace](https://cdn-learn.adafruit.com/assets/assets/000/039/115/medium800/learn_arduino_P2080096_2kb.jpg)
+
 Then solder wires to the **opt servo** holes located at the top of the shield. The red wire goes to the hole closest to **Reset** button. Be sure to get this step right, you can risk damage to the servo motor. Connect the wires to a DC power jack, this power jack will be connected to a **5 Vdc** power supply, which will provide enough power to drive the servo. Do not use anything higher than 5 Vdc.
 
 ## Software Installation
 
+Code to run this device is provided in the repository. Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software). IDE is needed to compile and upload the code to Arduino Uno. The code requires some libraries to run. Libraries that are not included with Arduino IDE need to be download and put into the library folder of arduino. The location of arduino library is in `/Documents/Arduino/libraries`
+
+Libraries needed:
+[Adafruit Motor Shield Library](https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-software)
+[Adafruit RGB LCD Shield Library](https://learn.adafruit.com/rgb-lcd-shield/using-the-rgb-lcd-shield)
+[Lidar Lite Library](https://github.com/garmin/LIDARLite_v3_Arduino_Library)
+
+
 ## Collecting Data
 
+You can collect data in 2 ways, either with an SD card or through Arduino IDE serial output monitor. SD card saves the output to TEXT.txt file in the following format:
+`x_coord,y_coord,z_coord`
+where the xyz coordinates are the coordinates of a point in a scene. Alternatively you can output the data directly to a computer through USB connection using Arduino IDE. On startup, click on the right-most button on the toolbar in the Arduino IDE. This will open serial monitor window where the output will appear. Be sure to set the baud rate to 9600 if its not set already. At the end of the run you can save the output to a text file for further viewing.
+
 ## Visualizing Data
+
+Visualizing data can be done with many point cloud software programs.
 
 ## Closing Thoughts
