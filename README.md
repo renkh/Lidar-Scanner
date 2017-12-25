@@ -52,6 +52,7 @@ Then solder wires to the **opt servo** holes located at the top of the shield. T
 Code to run this device is provided in the repository. Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software). IDE is needed to compile and upload the code to Arduino Uno. The code requires some libraries to run. Libraries that are not included with Arduino IDE need to be download and put into the library folder of arduino. The location of arduino library is in `/Documents/Arduino/libraries`
 
 Libraries needed:
+
 [Adafruit Motor Shield Library](https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-software)
 
 [Adafruit RGB LCD Shield Library](https://learn.adafruit.com/rgb-lcd-shield/using-the-rgb-lcd-shield)
