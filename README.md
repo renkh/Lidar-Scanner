@@ -47,6 +47,17 @@ External power is needed to drive the servo motor. Cut trace along the bottom of
 
 Then solder wires to the **opt servo** holes located at the top of the shield. The red wire goes to the hole closest to **Reset** button. Be sure to get this step right, you can risk damage to the servo motor. Connect the wires to a DC power jack, this power jack will be connected to a **5 Vdc** power supply, which will provide enough power to drive the servo. Do not use anything higher than 5 Vdc.
 
+### Adafruit RGB LCD Shield Assembly
+The RGB LCD Shield came in a kit and must be assembled before use. The assembly is straight forward, follow [this guide](https://learn.adafruit.com/rgb-lcd-shield/assembly) on Adafruit page for detailed step by step instructions on how to do it.
+
+### Stacking the Shields
+Stacking shields on the Arduino is easy and straight forward but can be tricky especially if you are stacking mutiple shields that are of different lengths and sizes. The biggest thing to worry about is making sure that the shields do not compete for the same digital and analog pins. Fortunatley that is not a problem for this project as most of the shields use I2C communication which allows multiple devices to be connected to the same SDA and SCL pins. Here is a schematic of the project.
+![schematic](https://imgur.com/aC05mV1.jpg)
+Overview of shield stacking
+**Arduino Uno -> SD Card Shield -> Adafruit Motor Shield -> Adafruit RGB LCD Shield**
+The first shield that goes on top of Arduino Uno is the SD card shield. It uses the SPI bus and needs to be connected to the Arduino first. Next goes the Adafruit Motor Shield, to get better clearance use extra stackable header pins in between the SD card shield and Adafruit Motor shield. This provides extra clearance and allows you to insert SCL and SDA wire jumpers conected from Adafruit Motor shield to Arduino Uno, since SD card shield does not provide them on its circuit board. Then on top of that, stack Adafruit RGB LCD shield, it is an I2C device and only needs SDA and SCL pins to communicate with Arduino Uno.
+![shields](https://imgur.com/7mKoYSK.jpg)
+
 ## Software Installation
 
 Code to run this device is provided in the repository. Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software). IDE is needed to compile and upload the code to Arduino Uno. The code requires some libraries to run. Libraries that are not included with Arduino IDE need to be download and put into the library folder of arduino. The location of arduino library is in `/Documents/Arduino/libraries`
@@ -68,6 +79,8 @@ where the xyz coordinates are the coordinates of a point in a scene. Alternative
 
 ## Visualizing Data
 
-Visualizing data can be done with many point cloud software programs.
+Visualizing data can be done with many point cloud software programs. Since the output is just an xyz coordinate numbers, you can modify the output to fit any number of point cloud visualization programs. One program in particular that I used is [Scanse Sweep Visualizer](http://scanse.io/downloads).
 
 ## Closing Thoughts
+
+My goal is create an affordable 3D scanning Lidar sensor by using readily available parts and microcontrollers at a fraction of the price of comparable commercial 3D scanners. I was able to create a working prototype for $383.79 including all the nuts and bolts as well as extra hardware. However, not all parts are used in the final working version of this device. I feel that with everything I know now, the price can be reduced to less than $300, with the majority of the total cost coming from the Lidar sensor itself. For comparison, the cheapest 3D scanning lidar sensor on the market that's capable of full rotation in horizontal and vertical axis is Scanse Sweep, with their 3D scanner kit the total price comes out to be $748.95.
