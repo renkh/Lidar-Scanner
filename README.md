@@ -12,7 +12,7 @@ Lidar scanner is a device capable of scanning small to medium sized rooms and sp
 ## Demo
 
 ![demo]
-<a href="https://imgur.com/XbJLc1N"><img src="https://i.imgur.com/XbJLc1N.mp4" title="source: imgur.com" /></a>
+<a href="https://imgur.com/XbJLc1N"><img src="https://i.imgur.com/XbJLc1N.gif" title="source: imgur.com" /></a>
 ## How it works
 
   The device consists of a Lidar sensor, a stepper motor, servo motor, Arduino Uno R3 based microcontroller, Adafruit motor shield V2, SD card shield, Adafruit RBG 16x2 LCD display shield, slip ring, and electrolytic diode. Servo motor is connected to the Lidar sensor and rotates the sensor down on the x axis. The position of the servo motor is kept track by the Arduino and corresponds to the x coordinate in the scan file. The servo and Lidar unit is rotated by the stepper motor along the y axis. Slip ring helps keep the wires from tangling up on each other. The position of the stepper motor is kept track by Arduino and corresponds to the y coordinate in the scan file. At each step of the stepper motor, Lidar sensor measures the distance of a point in the scene. The distance measurement corresponds to the z coordinate in the scan file. The device continuously spins, collecting xyz coordinates that are saved to an SD card for later viewing.
