@@ -12,6 +12,7 @@ Lidar scanner is a device capable of scanning small to medium sized rooms and sp
 ## Demo
 
 ![demo]
+<blockquote class="imgur-embed-pub" lang="en" data-id="pdBPAoY"><a href="//imgur.com/pdBPAoY"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ## How it works
 
