@@ -1,5 +1,5 @@
 [materials]: https://i.imgur.com/d9pONmn.jpg "Materials"
-[demo]: https://imgur.com/pdBPAoY.png "Demo"
+[demo]: https://github.com/renkh/Lidar-Scanner/blob/master/images/animation.gif "Demo"
 [assembly]: https://imgur.com/Wku4ZV2.jpg "Assembly"
 # Lidar Scanner
 
